@@ -15,9 +15,10 @@ import ViewTreatementList from './BodyContent/Doctor/ViewTreatmentList/ViewTreat
 import CreateTreatementIn from './BodyContent/Doctor/CreateTreatementIn/CreateTreatmentIn';
 import CreateDoctor from './BodyContent/Admin/CreateDoctor/CreateDoctor';
 import CreateSlot from './BodyContent/Admin/CreateSlot/AdminCreateSlot';
-import DoctorList from './BodyContent/Admin/ViewDoctorList/AdDoctorList';
-import DoctorDetail from './BodyContent/Admin/ViewDocDetail/ViewDocDetail';
+import DoctorList from './BodyContent/Admin/ViewDoctorList/DoctorList';
+import DoctorDetail from './BodyContent/Admin/ViewDocDetail/DoctorDetail';
 import DoctorUpdate from './BodyContent/Admin/UpdateDoctor/UpdateDoctor';
+import Cancellation from './BodyContent/Admin/CancellationRequests/CancellationRequests';
 import CustomerProfile from './BodyContent/customer/ViewProfile/UserProfile';
 import CustomerEditProfile from './BodyContent/customer/EditProfile/EditProfile';
 import CustomerViewTreatmentIn from './BodyContent/customer/ViewTreatmentIn/TreatmentProcess';
@@ -52,8 +53,9 @@ function App() {
           <Route path='/admin/createdoctor' element={<CreateDoctor/>} />
           <Route path='/admin/createslot' element={<CreateSlot/>} />
           <Route path='/admin/doctorlist' element={<DoctorList/>} />
-          <Route path='/admin/doctordetail' element={<DoctorDetail/>} />
+          <Route path='/admin/doctorlist/detail' element={<DoctorDetail/>} />
           <Route path='/admin/doctorupdate' element={<DoctorUpdate/>} />
+          <Route path='/admin/cancellation' element={<Cancellation/>} />
 
 
           {/* custormer */}
